@@ -30,4 +30,9 @@ generator.renderToFile(blueprintJSON, 'path/to/file', function (err) {
 
 When plugin a theme into `cipolla` you should implement this interface:
 
-* 
+* `setOptions(options)` function that set the options passed to the theme from cipolla
+* `render(blueprint, callback)` function that renders templates and returns an html on callback
+    * `err` if there's any error present
+    * `html` render html from the template
+* `renderToFile(blueprint,pathToFile, callback)` function that renders template directly to a file
+    * `err` if there's any error
