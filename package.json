@@ -1,0 +1,30 @@
+{
+  "name": "cipolla",
+  "version": "1.0.0",
+  "description": "API Blueprint AST to HTML compiler based on engines",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -t 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@git.corp.xoom.com:7999/pa/cipolla.git"
+  },
+  "keywords": [
+    "api",
+    "blueprint",
+    "html",
+    "template",
+    "json"
+  ],
+  "author": "Oscar Funes",
+  "license": "MIT",
+  "devDependencies": {
+    "code": "^1.4.1",
+    "lab": "^5.13.0",
+    "sinon": "^1.15.4"
+  },
+  "dependencies": {
+    "hoek": "^2.14.0"
+  }
+}
