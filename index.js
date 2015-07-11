@@ -4,14 +4,12 @@ var internals = {};
 
 module.exports = internals.cipolla = function (theme, themeOptions) {
 
-    themeOptions = themeOptions || {};
-
     if (!(this instanceof internals.cipolla)) {
        return new internals.cipolla(theme, themeOptions);
     }
 
-    this._theme = theme;
-    this._theme.setOptions(themeOptions);
+    themeOptions = themeOptions || {};
+    this._theme = new theme(themeOptions);
 };
 
 internals.cipolla.prototype.render = function (blueprint, callback) {
